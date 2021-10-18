@@ -1,0 +1,25 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "data/drivers_assignment.csv"},
+    "width":500,
+    "transform": [
+        {"filter": "datum.champs > 0"}
+    ],
+    "encoding": {
+        "y": {"field": "name", "type": "ordinal", "title": ""},
+        "x": {"field": "champs", "type": "quantitative", "title": "Championships"}
+    },
+    "layer": [
+        {
+            "mark": {"type": "bar", "cornerRadiusEnd": 4},
+            "encoding": {
+                "color": {"value": "#fc8d59"},
+                "tooltip": [
+                    {"field": "name", "type": "nominal", "title": "Driver"},
+                    {"field": "country", "type": "nominal", "title": "Country"},
+                    {"field": "champs", "type": "quantitative", "title": "Championships"}
+                ]
+            }
+        }
+    ]
+}

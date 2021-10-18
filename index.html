@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+<script src = "https://cdn.jsdelivr.net/npm/vega@5.20.2"> </script>
+<script src = "https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"> </script> 
+<script src = "https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"> </script>
+<script src = "bar.js"> </script>
+
+<title> Assignment 2 </title>
+
+<link rel = "stylesheet" href = "https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity = "sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin = "anonymous">
+<link rel = "stylesheet" href = "https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+
+</head>
+
+<link href = "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;700&display=swap" rel = "stylesheet">
+<link rel = "stylesheet" href = "style.css">
+
+<body>
+    <h1 id = "c-align"> Data Visualisation 2 - Visualising Formula 1 Driver Data </h1>
+    <h2 id = "c-align"> Fabian Psomas </h2>
+
+    <p id = "c-align"> 
+    Formula 1 is the highest category of global motorsport, drivers have been competing for the <br>
+    World Driver's Championship (WDC) since 1950. F1 is typically thought of as a Euro-centric <br>
+    competition, but drivers have come from all corners of the globe to participate in the sport. 
+    <br>
+    <br>
+    <br>
+</p>
+
+    <h2 id = "c-align"> Where do F1 drivers come from? </h2>
+    <p id = "c-align"> 
+    As you might expect, most F1 drivers come from Europe, even <br>
+    after normalising by population. More drivers than you might <br>
+    expect come from South America. Australian F1 drivers are also <br>
+    quite common, having the third most drivers per 10 million <br>
+    people outside of Europe.
+    </p>
+    <h3 id = "c-align"> F1 Drivers per 10 Million Population </h3> 
+
+    <div class="pure-g">
+        <div class="pure-u-1"></div>
+        <div id="choro"></div>
+    </div>
+
+    <p id = "c-align"> 
+    Zooming into Europe, it's clear that western and central European <br>
+    drivers have been most common in F1, with Switzerland having the most <br>
+    drivers per 10 million people, followed by the United Kingdom and <br>
+    Belgium. Swedish and Finnish drivers are also relatively common. <br>
+    No F1 drivers have come from eastern or southeastern Europe (excluding Russia). 
+    </p>
+    <h3 id = "c-align"> European F1 Drivers per 10 Million Population </h3> <div id = "choroeu"> </div>
+
+    <div class="pure-g">
+        <div class="pure-u-1"></div>
+        <div id="choroeu"></div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id = "c-align"> Which countries have been most successful in F1? </h2>
+    <p id = "c-align">  
+        Going by total championships won, the UK has been the most <br>
+        successful, followed by Germany and Brazil. This isn't unexpected, <br>
+        given the absolute and relative large number of drivers that <br>
+        have come from the UK. <br>
+        <br>
+        Interestingly, Germany's 12 championships are shared between <br>
+        only three different drivers; seven-time champion Michael Schumacher, <br> 
+        four-time champion Sebastian Vettel, and one-time winner Nico Rosberg. <br>
+        Australian drivers have also been relatively successful with <br>
+        five WDC winners, more than Italy, France or the USA.
+    </p>
+
+    <h3 id = "c-align"> F1 Championships by Country </h3> 
+    <div class="pure-g">
+        <div class="pure-u-1-3"> </div>
+        <div id="bar"></div>
+
+    </div>
+    <p id = "c-align"> 
+        The two most successful drivers of all time, Michael Schumacher <br>
+        and Lewis Hamilton (both with seven WDC titles each) contribute <br>
+        greatly to their nation's overall total. The most successful <br>
+        Australian driver in F1 history is Jack Brabham, who won <br>
+        three WDC titles in 1959, 1960 and 1966.
+    </p>
+    <h3 id = "c-align"> Most Successful Drivers </h3> 
+    
+    <div class="pure-g">
+        <div class="pure-u-1-3"></div>
+        <div id="drivers"></div>
+    </div>
+
+    <p id = "c-align"> 
+        What if we looked at the proportion of unique champions to <br>
+        total number of drivers from each country, instead of total <br>
+        championships? From this, we can see that Finnish drivers <br>
+        tend to be very successful in F1, three of the nine drivers <br>
+        from Finland that have competed in the sport have become <br>
+        eventual champions. <br>
+        <br>
+        Australia is third best according to this metric, behind only <br>
+        Finland and Austria, with almost 12% of all Australian F1 drivers <br>
+        becoming champions. Perhaps most interestingly, Australian drivers <br>
+        tend to be more successful (relatively speaking) than western <br>
+        European nations like the UK, Italy and France, with only 6%, <br>
+        2% and 1% of their drivers becoming champions respectively.
+
+    </p>
+    <h3 id = "c-align"> Proportion of Drivers That Became Champions </h3> <div id = "propchoro"> </div>
+
+    <div class="pure-g">
+        <div class="pure-u-1">
+        <div id="propchoro"></div>
+        </div>
+    </div>
+
+</body> 
+</html>
